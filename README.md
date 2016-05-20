@@ -1,3 +1,4 @@
+<img align="center" src="http://fs5.directupload.net/images/160520/k5ylwjgq.png" alt="DK Development Corporation - Hangman">
 # Welcome to Hangman!
 Hangman is a WINForms C# Game that provides multiple languages and a flexible, responsive UI
 
