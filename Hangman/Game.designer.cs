@@ -1,4 +1,4 @@
-﻿namespace hangman_csharp
+﻿namespace hangman
 {
     partial class Game
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.Button15 = new System.Windows.Forms.Button();
             this.Button16 = new System.Windows.Forms.Button();
             this.Button17 = new System.Windows.Forms.Button();
@@ -55,10 +56,12 @@
             this.Button3 = new System.Windows.Forms.Button();
             this.Button2 = new System.Windows.Forms.Button();
             this.Button1 = new System.Windows.Forms.Button();
+            this.back_game = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button15
             // 
+            this.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button15.Location = new System.Drawing.Point(188, 323);
             this.Button15.Name = "Button15";
             this.Button15.Size = new System.Drawing.Size(27, 23);
@@ -68,6 +71,7 @@
             // 
             // Button16
             // 
+            this.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button16.Location = new System.Drawing.Point(71, 381);
             this.Button16.Name = "Button16";
             this.Button16.Size = new System.Drawing.Size(27, 23);
@@ -77,6 +81,7 @@
             // 
             // Button17
             // 
+            this.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button17.Location = new System.Drawing.Point(104, 381);
             this.Button17.Name = "Button17";
             this.Button17.Size = new System.Drawing.Size(27, 23);
@@ -86,6 +91,7 @@
             // 
             // Button18
             // 
+            this.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button18.Location = new System.Drawing.Point(56, 323);
             this.Button18.Name = "Button18";
             this.Button18.Size = new System.Drawing.Size(27, 23);
@@ -95,6 +101,7 @@
             // 
             // Button19
             // 
+            this.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button19.Location = new System.Drawing.Point(170, 381);
             this.Button19.Name = "Button19";
             this.Button19.Size = new System.Drawing.Size(27, 23);
@@ -104,6 +111,7 @@
             // 
             // Button20
             // 
+            this.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button20.Location = new System.Drawing.Point(221, 323);
             this.Button20.Name = "Button20";
             this.Button20.Size = new System.Drawing.Size(27, 23);
@@ -113,6 +121,7 @@
             // 
             // Button21
             // 
+            this.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button21.Location = new System.Drawing.Point(155, 323);
             this.Button21.Name = "Button21";
             this.Button21.Size = new System.Drawing.Size(27, 23);
@@ -122,6 +131,7 @@
             // 
             // Button22
             // 
+            this.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button22.Location = new System.Drawing.Point(80, 352);
             this.Button22.Name = "Button22";
             this.Button22.Size = new System.Drawing.Size(27, 23);
@@ -131,6 +141,7 @@
             // 
             // Button23
             // 
+            this.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button23.Location = new System.Drawing.Point(122, 323);
             this.Button23.Name = "Button23";
             this.Button23.Size = new System.Drawing.Size(27, 23);
@@ -140,6 +151,7 @@
             // 
             // Button24
             // 
+            this.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button24.Location = new System.Drawing.Point(23, 323);
             this.Button24.Name = "Button24";
             this.Button24.Size = new System.Drawing.Size(27, 23);
@@ -149,6 +161,7 @@
             // 
             // Button25
             // 
+            this.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button25.Location = new System.Drawing.Point(320, 323);
             this.Button25.Name = "Button25";
             this.Button25.Size = new System.Drawing.Size(27, 23);
@@ -158,6 +171,7 @@
             // 
             // Button26
             // 
+            this.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button26.Location = new System.Drawing.Point(287, 323);
             this.Button26.Name = "Button26";
             this.Button26.Size = new System.Drawing.Size(27, 23);
@@ -167,6 +181,7 @@
             // 
             // Button27
             // 
+            this.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button27.Location = new System.Drawing.Point(236, 381);
             this.Button27.Name = "Button27";
             this.Button27.Size = new System.Drawing.Size(27, 23);
@@ -176,6 +191,7 @@
             // 
             // Button9
             // 
+            this.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button9.Location = new System.Drawing.Point(269, 381);
             this.Button9.Name = "Button9";
             this.Button9.Size = new System.Drawing.Size(27, 23);
@@ -185,6 +201,7 @@
             // 
             // Button10
             // 
+            this.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button10.Location = new System.Drawing.Point(311, 352);
             this.Button10.Name = "Button10";
             this.Button10.Size = new System.Drawing.Size(27, 23);
@@ -194,6 +211,7 @@
             // 
             // Button11
             // 
+            this.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button11.Location = new System.Drawing.Point(278, 352);
             this.Button11.Name = "Button11";
             this.Button11.Size = new System.Drawing.Size(27, 23);
@@ -203,6 +221,7 @@
             // 
             // Button12
             // 
+            this.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button12.Location = new System.Drawing.Point(245, 352);
             this.Button12.Name = "Button12";
             this.Button12.Size = new System.Drawing.Size(27, 23);
@@ -212,6 +231,7 @@
             // 
             // Button13
             // 
+            this.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button13.Location = new System.Drawing.Point(254, 323);
             this.Button13.Name = "Button13";
             this.Button13.Size = new System.Drawing.Size(27, 23);
@@ -221,6 +241,7 @@
             // 
             // Button14
             // 
+            this.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button14.Location = new System.Drawing.Point(212, 352);
             this.Button14.Name = "Button14";
             this.Button14.Size = new System.Drawing.Size(27, 23);
@@ -230,6 +251,7 @@
             // 
             // Button8
             // 
+            this.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button8.Location = new System.Drawing.Point(179, 352);
             this.Button8.Name = "Button8";
             this.Button8.Size = new System.Drawing.Size(27, 23);
@@ -239,6 +261,7 @@
             // 
             // Button7
             // 
+            this.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button7.Location = new System.Drawing.Point(146, 352);
             this.Button7.Name = "Button7";
             this.Button7.Size = new System.Drawing.Size(27, 23);
@@ -248,6 +271,7 @@
             // 
             // Button6
             // 
+            this.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button6.Location = new System.Drawing.Point(89, 323);
             this.Button6.Name = "Button6";
             this.Button6.Size = new System.Drawing.Size(27, 23);
@@ -257,6 +281,7 @@
             // 
             // Button5
             // 
+            this.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button5.Location = new System.Drawing.Point(113, 352);
             this.Button5.Name = "Button5";
             this.Button5.Size = new System.Drawing.Size(27, 23);
@@ -266,6 +291,7 @@
             // 
             // Button4
             // 
+            this.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button4.Location = new System.Drawing.Point(137, 381);
             this.Button4.Name = "Button4";
             this.Button4.Size = new System.Drawing.Size(27, 23);
@@ -275,6 +301,7 @@
             // 
             // Button3
             // 
+            this.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button3.Location = new System.Drawing.Point(203, 381);
             this.Button3.Name = "Button3";
             this.Button3.Size = new System.Drawing.Size(27, 23);
@@ -284,6 +311,7 @@
             // 
             // Button2
             // 
+            this.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button2.Location = new System.Drawing.Point(47, 352);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(27, 23);
@@ -293,7 +321,8 @@
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(140, 410);
+            this.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button1.Location = new System.Drawing.Point(12, 410);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(75, 23);
             this.Button1.TabIndex = 54;
@@ -301,11 +330,23 @@
             this.Button1.UseVisualStyleBackColor = true;
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // back_game
+            // 
+            this.back_game.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back_game.Location = new System.Drawing.Point(270, 410);
+            this.back_game.Name = "back_game";
+            this.back_game.Size = new System.Drawing.Size(75, 23);
+            this.back_game.TabIndex = 81;
+            this.back_game.Text = "Back";
+            this.back_game.UseVisualStyleBackColor = true;
+            this.back_game.Click += new System.EventHandler(this.back_game_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(357, 439);
+            this.Controls.Add(this.back_game);
             this.Controls.Add(this.Button15);
             this.Controls.Add(this.Button16);
             this.Controls.Add(this.Button17);
@@ -334,6 +375,7 @@
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -372,6 +414,7 @@
         internal System.Windows.Forms.Button Button3;
         internal System.Windows.Forms.Button Button2;
         internal System.Windows.Forms.Button Button1;
+        private System.Windows.Forms.Button back_game;
     }
 }
 

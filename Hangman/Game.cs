@@ -6,9 +6,10 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace hangman_csharp
+namespace hangman
 {
     public partial class Game : Form
     {
@@ -25,9 +26,11 @@ namespace hangman_csharp
         //The Word-Labels
         List<Label> labels = new List<Label>();
         bool ignore;
+        //Stage means in which state the Hangman is. Is it more than 10 - Hang.
         int stage = 0;
-
-        public static void DownloadFiles()
+        //Load classes
+        MainMenu loadMain = new MainMenu();
+        public void DownloadFiles()
         {
             string path = @"C:/Hangman/Wordlists/";
             string germanWordlist = "https://www.dropbox.com/s/540txkvc94zl3p5/german_words.txt?dl=1";
@@ -65,7 +68,7 @@ namespace hangman_csharp
             }
 
             stage += !labels.Any(lbl => lbl.Text == b.Text) ? 1 : 0;
-            ignore = labels.All(lbl => lbl.Text != " ") || stage == 10;
+            ignore = labels.All(lbl => lbl.Text != " ") || stage == 11;
             //Reload the UI
             Invalidate();
         }
@@ -112,6 +115,11 @@ namespace hangman_csharp
             if (stage >= 10)
             {
                 e.Graphics.DrawLine(new Pen(Color.Black, 2), 198, 130, 213, 170);
+
+            }
+            if (stage >= 11)
+            {
+                MessageBox.Show("You failed!");
             }
         }
         //If you click on New Game
@@ -119,7 +127,7 @@ namespace hangman_csharp
         {
             string[] list = File.ReadAllLines(@"C:/Hangman/Wordlists/german_wordlist.txt");
             //Reset the Size
-            SetClientSizeCore(370, 440);
+            // SetClientSizeCore(370, 440);
             //Reset the Wordlist
             string word = list[r.Next(0, list.Length)].ToUpper();
             //Reset the Labels
@@ -144,6 +152,12 @@ namespace hangman_csharp
             stage = 0;
             //Redraw the UI
             Invalidate();
+        }
+
+        private void back_game_Click(object sender, EventArgs e)
+        {
+            Close();
+            loadMain.Show();
         }
     }
 }

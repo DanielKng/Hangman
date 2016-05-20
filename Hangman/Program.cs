@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
-namespace hangman_csharp
+namespace hangman
 {
     static class Program
     {
@@ -14,8 +12,8 @@ namespace hangman_csharp
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Game());
+            Application.SetCompatibleTextRenderingDefault(false);          
+            Application.Run(new MainMenu());
         }
     }
 }
