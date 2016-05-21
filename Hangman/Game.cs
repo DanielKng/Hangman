@@ -9,7 +9,7 @@ using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace hangman
+namespace Hangman
 {
     public partial class Game : Form
     {
@@ -17,7 +17,6 @@ namespace hangman
         {
             InitializeComponent();
             Paint += Form1_Paint;
-            DownloadFiles();
         }
         //Load the Words from a .txt file. If you selected German, download the German, etc
         //Randomize
@@ -30,15 +29,6 @@ namespace hangman
         int stage = 0;
         //Load classes
         MainMenu loadMain = new MainMenu();
-        public void DownloadFiles()
-        {
-            string path = @"C:/Hangman/Wordlists/";
-            string germanWordlist = "https://www.dropbox.com/s/540txkvc94zl3p5/german_words.txt?dl=1";
-            Directory.CreateDirectory(path);
-
-            WebClient webClient = new WebClient();
-            webClient.DownloadFile(germanWordlist, path + @"/german_wordlist.txt");
-        }
         private void Form1_Load(object sender, EventArgs e)
         {
             DoubleBuffered = true;

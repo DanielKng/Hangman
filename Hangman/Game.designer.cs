@@ -1,4 +1,4 @@
-﻿namespace hangman
+﻿namespace Hangman
 {
     partial class Game
     {
@@ -38,7 +38,7 @@
             this.Button21 = new System.Windows.Forms.Button();
             this.Button22 = new System.Windows.Forms.Button();
             this.Button23 = new System.Windows.Forms.Button();
-            this.Button24 = new System.Windows.Forms.Button();
+            this.Letter_Q = new System.Windows.Forms.Button();
             this.Button25 = new System.Windows.Forms.Button();
             this.Button26 = new System.Windows.Forms.Button();
             this.Button27 = new System.Windows.Forms.Button();
@@ -149,15 +149,15 @@
             this.Button23.Text = "R";
             this.Button23.UseVisualStyleBackColor = true;
             // 
-            // Button24
+            // Letter_Q
             // 
-            this.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button24.Location = new System.Drawing.Point(23, 323);
-            this.Button24.Name = "Button24";
-            this.Button24.Size = new System.Drawing.Size(27, 23);
-            this.Button24.TabIndex = 71;
-            this.Button24.Text = "Q";
-            this.Button24.UseVisualStyleBackColor = true;
+            this.Letter_Q.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Letter_Q.Location = new System.Drawing.Point(23, 323);
+            this.Letter_Q.Name = "Letter_Q";
+            this.Letter_Q.Size = new System.Drawing.Size(27, 23);
+            this.Letter_Q.TabIndex = 71;
+            this.Letter_Q.Text = "Q";
+            this.Letter_Q.UseVisualStyleBackColor = true;
             // 
             // Button25
             // 
@@ -356,7 +356,7 @@
             this.Controls.Add(this.Button21);
             this.Controls.Add(this.Button22);
             this.Controls.Add(this.Button23);
-            this.Controls.Add(this.Button24);
+            this.Controls.Add(this.Letter_Q);
             this.Controls.Add(this.Button25);
             this.Controls.Add(this.Button26);
             this.Controls.Add(this.Button27);
@@ -396,7 +396,7 @@
         internal System.Windows.Forms.Button Button21;
         internal System.Windows.Forms.Button Button22;
         internal System.Windows.Forms.Button Button23;
-        internal System.Windows.Forms.Button Button24;
+        internal System.Windows.Forms.Button Letter_Q;
         internal System.Windows.Forms.Button Button25;
         internal System.Windows.Forms.Button Button26;
         internal System.Windows.Forms.Button Button27;

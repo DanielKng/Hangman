@@ -1,4 +1,4 @@
-﻿namespace hangman
+﻿namespace Hangman
 {
     partial class MainMenu
     {
@@ -62,7 +62,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::hangman.Properties.Resources.Hangman_Logo;
+            this.pictureBox1.Image = global::Hangman.Properties.Resources.Hangman_Logo;
             this.pictureBox1.Location = new System.Drawing.Point(211, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(98, 97);
