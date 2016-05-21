@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.IO;
-using System.Media;
-using System.Drawing;
-using System.Security.Permissions;
+using System.Windows.Forms;
 
 namespace Hangman
 {

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,9 +8,11 @@ namespace Hangman
 {
     public partial class Options : Form
     {
-        //Declaration of the Downlodable Content and the Path's
-        string remoteGermanList = "https://www.dropbox.com/s/540txkvc94zl3p5/german_words.txt?dl=1";
-        string germanWordlistPath = @"C:/Hangman/Wordlists/german_wordlist.txt";
+        //Declaration of the Download Content and the Path's
+        private string remoteGermanList = "https://www.dropbox.com/s/540txkvc94zl3p5/german_words.txt?dl=1";
+
+        private string germanWordlistPath = @"C:/Hangman/Wordlists/german_wordlist.txt";
+
         public Options()
         {
             //If we need files, download em

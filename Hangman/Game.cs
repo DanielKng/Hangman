@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hangman
@@ -18,17 +14,24 @@ namespace Hangman
             InitializeComponent();
             Paint += Form1_Paint;
         }
+
         //Load the Words from a .txt file. If you selected German, download the German, etc
         //Randomize
-        Random r = new Random();
-        Button[] alphabetButtons;
+        private Random r = new Random();
+
+        private Button[] alphabetButtons;
+
         //The Word-Labels
-        List<Label> labels = new List<Label>();
-        bool ignore;
+        private List<Label> labels = new List<Label>();
+
+        private bool ignore;
+
         //Stage means in which state the Hangman is. Is it more than 10 - Hang.
-        int stage = 0;
+        private int stage = 0;
+
         //Load classes
-        MainMenu loadMain = new MainMenu();
+        private MainMenu loadMain = new MainMenu();
+
         private void Form1_Load(object sender, EventArgs e)
         {
             DoubleBuffered = true;
@@ -105,13 +108,13 @@ namespace Hangman
             if (stage >= 10)
             {
                 e.Graphics.DrawLine(new Pen(Color.Black, 2), 198, 130, 213, 170);
-
             }
             if (stage >= 11)
             {
                 MessageBox.Show("You failed!");
             }
         }
+
         //If you click on New Game
         private void Button1_Click(object sender, EventArgs e)
         {
