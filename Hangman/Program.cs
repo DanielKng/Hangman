@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace hangman
+namespace Hangman
 {
     static class Program
     {
