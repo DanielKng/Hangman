@@ -24,6 +24,10 @@ namespace Hangman
             {
                 FilesMessageBox();
             }
+            else if (Properties.Settings.Default.files_exist == "1")
+            {
+                //We have all files, hide the Content
+            }
             InitializeComponent();
         }
 

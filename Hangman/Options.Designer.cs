@@ -88,8 +88,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox warning_text;
-        private System.Windows.Forms.TextBox download_info;
         private System.Windows.Forms.Button apply_options;
+        public System.Windows.Forms.TextBox warning_text;
+        public System.Windows.Forms.TextBox download_info;
     }
 }
