@@ -1,6 +1,3 @@
-<p align="center">
-  <img src= "http://fs5.directupload.net/images/160521/zedga8jv.png" />
-</p>
 #Welcome to Hangman!
 Hangman is a WINForms C# Game that provides multiple languages and a flexible, responsive UI
 
@@ -12,3 +9,8 @@ Downloading, reading and using the wordlists are already working:
 ![](http://puu.sh/oYYES/277f562360.png)
 
 Be sure to subscribe to this Repo to get notified of changes!
+
+
+<p align="center">
+  <img src= "http://fs5.directupload.net/images/160521/zedga8jv.png" />
+</p>
